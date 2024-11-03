@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url("../../Portofolio/newyorksunset.png");
+	background-attachment: fixed;
+	background-size: 2300px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 75px;
+	align-items: center;
+}
+
+.logo {
+	padding: 20px;
+	padding-top: 120px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	font-family: "playfair-display", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 35px;
+}
+
+.menu li {
+	color: white;
+	padding: 15px;
+}
+
+.menu-box {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+}
+
+.menu-icon, .menu-icon::before, .menu-icon::after {
+	display: block;
+	background-color: white;
+	height: 4px;
+	width: 30px;
+	position: absolute;
+	border-radius: 2px;
+	transition: transform 2s;
+}
+
+.menu-icon::before {
+	content:"";
+	margin-top: -10px;
+}
+
+.menu-icon::after {
+	content: "";
+	margin-top: 10px;
+}
+
+#menu-activate:checked + .menu-box .menu-icon::before {
+	margin-top: 0;
+	transform: rotate(45deg);
+}
+
+#menu-activate:checked + .menu-box .menu-icon::after {
+	margin-top: 0;
+	transform: rotate(-45deg);
+}
+
+#menu-activate:checked + .menubox .menu-icon {
+	background-color: rgba(0,0,0,0)
+}
+
+#menu-activate {
+	display: none;
+}
+
+@media screen and (max-width: 700px) { 
+    .menu-box {
+        display: flex;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 100px;
+        background-color:rgba(37,39,83,0.84);
+        flex-direction: column;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-activate ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        transition: height 1s;
+        display: none;
+    }
+    #menu-activate:checked ~ .menu li {
+        height: 50px;
+        padding: 10px;
+        transition: height 1s;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
