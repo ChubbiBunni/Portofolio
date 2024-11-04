@@ -1,12 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*Baggrundsbilledet*/
 body {
 	background-image: url("../../Portofolio/newyorksunset.png");
-	background-attachment: fixed;
-	background-size: 2300px;
+	background-attachment: flex;
+	background-size: 1920px;
 }
 
+
+/*Navigationslinjen*/
 nav {
 	display: flex;
 	flex-direction: row;
@@ -28,15 +31,20 @@ nav {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 35px;
+	text-shadow: 0 0 5px #FFFF;
+	text-align: center;
+	position: absolute;
+	right: 600px;
+	top: -50px;
 }
 
 .menu li {
 	color: white;
-	padding: 15px;
+	padding: 80px;
 }
 
 .menu-box {
-	display: none;
+	display: hidden;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -44,7 +52,7 @@ nav {
 }
 
 .menu-icon, .menu-icon::before, .menu-icon::after {
-	display: block;
+	display: hidden;
 	background-color: white;
 	height: 4px;
 	width: 30px;
@@ -66,24 +74,28 @@ nav {
 #menu-activate:checked + .menu-box .menu-icon::before {
 	margin-top: 0;
 	transform: rotate(45deg);
+	display: hidden;
 }
 
 #menu-activate:checked + .menu-box .menu-icon::after {
 	margin-top: 0;
 	transform: rotate(-45deg);
+	display: hidden;
 }
 
 #menu-activate:checked + .menubox .menu-icon {
-	background-color: rgba(0,0,0,0)
+	background-color: rgba(0,0,0,0);
+	display: hidden;
 }
 
 #menu-activate {
 	display: none;
+	display: hidden;
 }
 
 @media screen and (max-width: 700px) { 
     .menu-box {
-        display: flex;
+        display: hidden;
     }
     .menu {
         position: absolute;
@@ -107,21 +119,62 @@ nav {
         height: 50px;
         padding: 10px;
         transition: height 1s;
-        display: block;
+        display: hidden;
     }
 }
 
 
+/*skyerne*/
+#Work-Sky {
+	position: absolute;
+	top: 190px;
+	left: 130px;
+	/*mask image = gradiant skyer*/
+	/*-webkit-mask-image: linear-gradient(white, transparent);*/
+	opacity: 0.7;
+}
 
+#About-Sky {
+	position: absolute;
+	top: 400px;
+	left: 700px;
+	/*mask image = gradiant skyer*/
+	/*-webkit-mask-image: linear-gradient(white, transparent);*/
+	opacity: 0.7;
+}
 
+#Contact-Sky {
+	position: absolute;
+	top: 650px;
+	left: 100px;
+	/*mask image = gradiant skyer*/
+	/*-webkit-mask-image: linear-gradient(white, transparent);*/
+	opacity: 0.7;
+}
+	
+.sky {
+	text-shadow: 0 0 6px #FFFFFF, 2px 2px 3px #000000;
+	color:#FFFFFF;
+	font-size: 30px;
+}
 
+#work {
+	position: absolute;
+	top:270px;
+	left: 240px;
+}
 
+#about {
+	position: absolute;
+	top: 480px;
+	left: 800px;
+}
 
-
-
-
-
-
+#contact {
+	position: absolute;
+	top:730px;
+	left:180px;
+}
 
 
 
