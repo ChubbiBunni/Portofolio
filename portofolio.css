@@ -1,8 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*INDEX*/
 /*Baggrundsbilledet*/
-body {
+.index {
 	background-image: url("../../Portofolio/newyorksunset.png");
 	background-attachment: flex;
 	background-size: 1920px;
@@ -177,8 +178,14 @@ nav {
 }
 
 
-
-
+/*MY WORK*/
+.work {
+	background-image: url("../../Portofolio/newyorksunset.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	
+}
 
 
 
