@@ -43,6 +43,20 @@ nav {
 	color: white;
 	padding: 80px;
 }
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	color:white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	text-shadow: 0 0 20px #FFFF;
+}
 
 .menu-box {
 	display: hidden;
@@ -184,8 +198,15 @@ nav {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	
 }
 
+.work1 {
+	position: center;
+	align-content: center;
+	border-style: solid;
+	border-color: white;
+	border-radius: 10px;
+	border-shadow: 0 0 5px #FFFF;
+}
 
 
