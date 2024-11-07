@@ -186,25 +186,38 @@ a:hover {
 	}
 	
 	 .work1, .work2 {
-        position: relative; /* Keep relative positioning */
-        width: 200%; /* Ensure container width adjusts to screen size */
-        margin: 20px auto; /* Center images */
-        padding: 10px; /* Optional padding for spacing */
-        box-sizing: border-box; /* Include padding/border in the element's total width/height */
+        position: relative; 
+        width: 200%; 
+        margin: 20px auto; 
+        padding: 10px; 
+        box-sizing: border-box; 
 		border: none;
+		right: 500px;
+		top: 50px;
     }
 
     .work1 img, .work2 img {
-        width: 100%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
-        display: block; /* Ensure images are treated as block-level elements */
-        margin: 0 auto; /* Center images within their containers */
-		box-shadow: 0 0 10px #fff; /* Keep the box shadow */
+        width: 100%; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
+		box-shadow: 0 0 10px #fff; 
     }
-	.lorem {
-		
-	}
 	
+   .lorem {
+        transform: translate(0, 0);
+        margin: 20px;
+	   font-size: 70%;
+    }
+
+    #lorem1 {
+        transform: translate(-300px, 300px); 
+    }
+
+    #lorem2 {
+        transform: translate(-300px, 300px); 
+    }
+
     }
 
 
@@ -267,22 +280,22 @@ a:hover {
 }
 
 .work1, .work2 {
-    display: inline-block; /* Make the container wrap tightly around the image */
-    margin: 20px auto;      /* Center the container horizontally */
-    padding: 0;             /* Remove any extra padding */
-    box-sizing: border-box; /* Ensure the border is included in the size */
-    overflow: visible;       /* Hide any overflow (if necessary) */
+    display: inline-block; 
+    margin: 20px auto;      
+    padding: 0;             
+    box-sizing: border-box; 
+    overflow: visible;       
 
 }
 
 /* Image Styles */
 .work1 img, .work2 img {
 	position: relative;
-    display: block;         /* Make the image a block-level element */
-    width: 23%;            /* Make the image responsive */
-    height: auto;           /* Maintain aspect ratio */
-    border: 5px solid white; /* Add border around the image */
-    box-sizing: border-box; /* Ensure border fits within the image's size */
+    display: block;         
+    width: 23%;            
+    height: auto;           
+    border: 5px solid white; 
+    box-sizing: border-box; 
 	border-radius: 15px;
 	box-shadow: 0 0 5px #FFFF;
 	top: 100px;
@@ -290,13 +303,13 @@ a:hover {
 }
 
 .lorem {
-	position: relative;
-	top: -720px;
-	left: 650px;
+    position: relative;
+	bottom: 550px;
+	left: 620px;
 }
 
 .lorem p {
-    position: relative; /* Position the paragraphs relative to their normal position */
+    position: relative;
     font-family: "playfair-display", serif;
     font-weight: 400;
     font-style: normal;
@@ -305,17 +318,11 @@ a:hover {
     color: white;
     text-align: justify;
     overflow: hidden;
-    width: 30%;
-}
-
-#lorem1 {
-	top: 100px;
-}
-
-#lorem2 {
-	top: 200px;
+    width: 40%;
 	
 }
+
+
 
 
 
