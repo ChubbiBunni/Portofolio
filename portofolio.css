@@ -185,17 +185,25 @@ a:hover {
 		
 	}
 	
-	.work1, .work2 {
-        position: relative; /* Removed absolute positioning */
-        width: 90%; /* Make the work section width responsive */
-        margin: 20px auto; /* Center images on the page */
-        box-shadow: 0 0 10px #fff; /* Keep box shadow for effect */
+	 .work1, .work2 {
+        position: relative; /* Keep relative positioning */
+        width: 200%; /* Ensure container width adjusts to screen size */
+        margin: 20px auto; /* Center images */
+        
+        padding: 10px; /* Optional padding for spacing */
+        box-sizing: border-box; /* Include padding/border in the element's total width/height */
+		border: none;
     }
-	
-	 .work1 img, .work2 img {
+
+    .work1 img, .work2 img {
         width: 100%; /* Make images responsive */
-        height: auto;
-    }
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensure images are treated as block-level elements */
+        margin: 0 auto; /* Center images within their containers */
+    }box-shadow: 0 0 10px #fff; /* Keep the box shadow */
+	.lorem {
+		
+	}
 	
     }
 
@@ -258,65 +266,54 @@ a:hover {
 	background-position: center;
 }
 
-.work1 {
-	display: inline-block; 
+.work1, .work2 {
+    display: inline-block; /* Make the container wrap tightly around the image */
+    margin: 20px auto;      /* Center the container horizontally */
+    padding: 0;             /* Remove any extra padding */
+    box-sizing: border-box; /* Ensure the border is included in the size */
+    overflow: visible;       /* Hide any overflow (if necessary) */
+
+}
+
+/* Image Styles */
+.work1 img, .work2 img {
 	position: relative;
-    border: 5px solid white;
+    display: block;         /* Make the image a block-level element */
+    width: 23%;            /* Make the image responsive */
+    height: auto;           /* Maintain aspect ratio */
+    border: 5px solid white; /* Add border around the image */
+    box-sizing: border-box; /* Ensure border fits within the image's size */
 	border-radius: 15px;
-	overflow: hidden;
 	box-shadow: 0 0 5px #FFFF;
-	top: 140px;
+	top: 100px;
 	left: 100px;
 }
 
-.work1 img {
-	display: block;
-	width: 500px;
-}
-
-.work2 {
-	display: inline-block; 
-	position: relative;
-    border: 5px solid white;
-	border-radius: 15px;
-	overflow: hidden;
-	box-shadow: 0 0 5px #FFFF;
-	top: 500px;
-	left: -412px;
-}
-
-.work2 img {
-	display: block;
-	width: 500px;
-}
-
 .lorem {
-	font-family: "playfair-display", serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 30px;
-	text-shadow: 0 0 5px #FFFF;
-	color: white;
+	position: relative;
+	top: -720px;
+	left: 650px;
+}
+
+.lorem p {
+    position: relative; /* Position the paragraphs relative to their normal position */
+    font-family: "playfair-display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 190%;
+    text-shadow: 0 0 5px #FFFF;
+    color: white;
+    text-align: justify;
+    overflow: hidden;
+    width: 30%;
 }
 
 #lorem1 {
-	position: absolute;
-	text-align: justify;
-	border: none;
-	overflow: hidden;
-	width: 500px;
-	top: 200px;
-	left: 700px;
+	top: 100px;
 }
 
 #lorem2 {
-	position: absolute;
-	text-align: justify;
-	border: none;
-	overflow: hidden;
-	width: 500px;
-	top: 600px;
-	left: 700px;
+	top: 200px;
 	
 }
 
