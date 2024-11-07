@@ -74,21 +74,27 @@ a:hover {
 .menu-icon, .menu-icon::before, .menu-icon::after {
     display: block; 
     background-color: white;
-    height: 4px; 
-    width: 30px; 
+    height: 5px; 
+    width: 40px; 
     transistion: transform 3s; 
     border-radius: 2px; 
     position: absolute;
+	right: 30px;
+	top: 40px;
 }
 
 .menu-icon::before {
 	content:"";
-	margin-top: -10px;
+	margin-top: -12px;
+	right: 0px;
+	top: 0px;
 }
 
 .menu-icon::after {
 	content: "";
-	margin-top: 10px;
+	margin-top: 12px;
+	right: 0px;
+	top: 0px;
 }
 
 #menu-activate:checked + .menu-box .menu-icon::before {
@@ -113,7 +119,7 @@ a:hover {
     display: none; }
 
 
-@media screen and (max-width: 700px)  {
+@media screen and (max-width: 600px)  {
         .menu-box {
             display: flex; 
         }
@@ -130,6 +136,7 @@ a:hover {
         }
         
         #menu-activate ~ .menu li {
+		display: none;
 		height: 0; 
 		margin: 0; 
 		padding: 0; 
@@ -137,6 +144,7 @@ a:hover {
 		transition: height 400ms; 
 	}
         #menu-activate:checked ~ .menu li {
+		display: block;
 		border: 1px solid #333; 
 		height: 25px; 
 		padding: 10px; 
@@ -151,41 +159,73 @@ a:hover {
 		color: white; 
 		background: #222; 
 	}
-
-
-
+	
+	#work-sky {
+		positon: relative;
+		top: 200px;
+		left: 130%;
+	}
+	
+	#work {
+		
+	}
+	#about-sky {
+		position: relative;
+		top: 400px;
+		left: 130px;
+	}
+	#about {
+		
+	}
+	#contact-sky {
+		top:600px;
+		left:130px;
+	}
+	#contact {
+		
+	}
+	
+	.work1, .work2 {
+        position: relative; /* Removed absolute positioning */
+        width: 90%; /* Make the work section width responsive */
+        margin: 20px auto; /* Center images on the page */
+        box-shadow: 0 0 10px #fff; /* Keep box shadow for effect */
     }
+	
+	 .work1 img, .work2 img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+	
+    }
+
 
 
 /*skyerne*/
 #Work-Sky {
-	position: absolute;
-	top: 190px;
+	position: relative;
+	top: 100px;
 	left: 130px;
-	/*mask image = gradiant skyer*/
-	/*-webkit-mask-image: linear-gradient(white, transparent);*/
 	opacity: 0.7;
 }
 
 #About-Sky {
-	position: absolute;
-	top: 400px;
-	left: 700px;
-	/*mask image = gradiant skyer*/
-	/*-webkit-mask-image: linear-gradient(white, transparent);*/
+	position: relative;
+	top: 330px;
+	left: 300px;
 	opacity: 0.7;
 }
 
 #Contact-Sky {
-	position: absolute;
-	top: 650px;
-	left: 100px;
-	/*mask image = gradiant skyer*/
-	/*-webkit-mask-image: linear-gradient(white, transparent);*/
+	position: relative;
+	top: 560px;
+	left: -700px;
 	opacity: 0.7;
 }
 	
 .sky {
+	display: flex;
+	flex-direction: row;
 	text-shadow: 0 0 6px #FFFFFF, 2px 2px 3px #000000;
 	color:#FFFFFF;
 	font-size: 30px;
@@ -219,12 +259,68 @@ a:hover {
 }
 
 .work1 {
-	position: center;
-	align-content: center;
-	border-style: solid;
-	border-color: white;
-	border-radius: 10px;
-	border-shadow: 0 0 5px #FFFF;
+	display: inline-block; 
+	position: relative;
+    border: 5px solid white;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 0 5px #FFFF;
+	top: 140px;
+	left: 100px;
 }
+
+.work1 img {
+	display: block;
+	width: 500px;
+}
+
+.work2 {
+	display: inline-block; 
+	position: relative;
+    border: 5px solid white;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 0 5px #FFFF;
+	top: 500px;
+	left: -412px;
+}
+
+.work2 img {
+	display: block;
+	width: 500px;
+}
+
+.lorem {
+	font-family: "playfair-display", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+	text-shadow: 0 0 5px #FFFF;
+	color: white;
+}
+
+#lorem1 {
+	position: absolute;
+	text-align: justify;
+	border: none;
+	overflow: hidden;
+	width: 500px;
+	top: 200px;
+	left: 700px;
+}
+
+#lorem2 {
+	position: absolute;
+	text-align: justify;
+	border: none;
+	overflow: hidden;
+	width: 500px;
+	top: 600px;
+	left: 700px;
+	
+}
+
+
+
 
 
