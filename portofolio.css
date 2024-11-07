@@ -189,7 +189,6 @@ a:hover {
         position: relative; /* Keep relative positioning */
         width: 200%; /* Ensure container width adjusts to screen size */
         margin: 20px auto; /* Center images */
-        
         padding: 10px; /* Optional padding for spacing */
         box-sizing: border-box; /* Include padding/border in the element's total width/height */
 		border: none;
@@ -200,7 +199,8 @@ a:hover {
         height: auto; /* Maintain aspect ratio */
         display: block; /* Ensure images are treated as block-level elements */
         margin: 0 auto; /* Center images within their containers */
-    }box-shadow: 0 0 10px #fff; /* Keep the box shadow */
+		box-shadow: 0 0 10px #fff; /* Keep the box shadow */
+    }
 	.lorem {
 		
 	}
