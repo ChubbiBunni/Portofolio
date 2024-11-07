@@ -4,7 +4,7 @@
 /*INDEX*/
 /*Baggrundsbilledet*/
 .index {
-	background-image: url("../../Portofolio/newyorksunset.png");
+	background-image: url("Portofolio/newyorksunset.png");
 	background-attachment: flex;
 	background-size: 1920px;
 }
@@ -273,7 +273,7 @@ a:hover {
 
 /*MY WORK*/
 .work {
-	background-image: url("../../Portofolio/newyorksunset.png");
+	background-image: url("Portofolio/newyorksunset.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
